@@ -46,17 +46,22 @@
     }
 
     .clique-aqui img {
-        width: 150px;
-        left: 0;
-      }
+        display: none;
+    }
 
     .vamos-trilhar h2 {
-        font-size: 1.2rem;
+        font-size: 2rem;
       }
 
       .vamos-trilhar{
-        margin-right: 50px;
+        margin-left: 0px;
       }
+
+    .btnCartilha {
+        margin-right: 80px;
+    }
+
+
 
 }
 
@@ -93,22 +98,25 @@
         max-width: 90vw;
     }
 
+    .vamos-trilhar {
+        margin-left: 0;
+    }
+
     .vamos-trilhar h2 {
-        font-size: 2rem;
+        max-width: 90vw;
+    }
+
+    .btnCartilha {
+        margin-left: 80px;
     }
 
     #intro h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-left: 0;
       }
 
       .clique-aqui img {
-        width: 200px;
-        left: 0;
-      }
-
-      .btnCartilha {
-        margin-left: 60px;
+        display: none;
       }
       
 
@@ -139,22 +147,16 @@
         opacity: 0;
     }
 
-    #corpo-manifesto p {
-        max-width: 90vw;
+    #intro h1 {
+        margin-left: 0;
+        margin-bottom: 80px;
     }
 
-    .container-form {
-        max-width: 90vw;
-        margin: 0 auto;
-    }
-
-    .card-luciana {
-        margin-right: 0px;
+    .clique-aqui img {
+        width: 200px;
+        top: -110px;
+        left: -200px;
+        position: absolute;
       }
-
-      .mandato-coletivo {
-        gap: 20px;
-      }
-
 
 }
