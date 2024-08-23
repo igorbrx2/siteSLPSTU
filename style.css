@@ -10,8 +10,6 @@ Version: 1.0
 
 /* HEADER */
 
-@import url(./responsivo.css);
-
 #cabecalho {
     display: flex;
     width: 100%;
@@ -83,14 +81,6 @@ Version: 1.0
   }
   
   /* IMAGEM DE INTRODUÇÃO */
-  
-  .titulo-intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   
   #intro {
     display: flex;
