@@ -1,0 +1,160 @@
+
+
+@media (max-width: 390px) {
+
+    .titulo-intro h1 {
+        font-size: 4.5rem;
+    }
+
+    .titulo-intro h2 {
+        font-size: 3.5rem;
+        margin-top: -15px;
+    }
+
+    #intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 93vh;
+        background: url(./fotosCandidatos2024/BG.png) center 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #intro h1 {
+        font-size: 2rem;
+        margin-left: 0;
+      }
+    
+      .zap {
+        height: 10vh;
+      }
+
+    #corpo-manifesto h1 {
+        margin-top: -50px;
+        font-size: 4rem;
+    }
+
+    #pre-candidaturas h3 {
+        font-size: 3.5rem;
+    }
+
+    .card-candidato img {
+        width: 350px;
+    }
+
+    .clique-aqui img {
+        width: 150px;
+        left: 0;
+      }
+
+    .vamos-trilhar h2 {
+        font-size: 1.2rem;
+      }
+
+      .vamos-trilhar{
+        margin-right: 50px;
+      }
+
+}
+
+@media (max-width: 575px) {
+
+    #intro button {
+        max-width: 90vw;
+        padding: 5px 15px;
+    } 
+    .titulo-intro h1 {
+        font-size: 5rem;
+    }
+
+    .titulo-intro h2 {
+        font-size: 4rem;
+        margin-top: -20px;
+    }
+
+    #corpo-manifesto h1 {
+        margin-top: -50px;
+        font-size: 5rem;
+    }
+
+    #corpo-manifesto h2 {
+        font-size: 1.6rem;
+    }
+
+    #pre-candidaturas h2 {
+        font-size: 4.5rem;
+        max-width: 90vw;
+    }
+
+    .clique-aqui button {
+        max-width: 90vw;
+    }
+
+    .vamos-trilhar h2 {
+        font-size: 2rem;
+    }
+
+    #intro h1 {
+        font-size: 3rem;
+        margin-left: 0;
+      }
+
+      .clique-aqui img {
+        width: 200px;
+        left: 0;
+      }
+
+      .btnCartilha {
+        margin-left: 60px;
+      }
+      
+
+}
+
+@media (max-width: 770px) {
+
+    .mobile-menu {
+        display: block;
+    }
+
+    #nav-list {
+        position: absolute;
+        top: 2vh;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: var(--vermelho-bg);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform .4s ease-in;
+    }
+
+    #nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    #corpo-manifesto p {
+        max-width: 90vw;
+    }
+
+    .container-form {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    .card-luciana {
+        margin-right: 0px;
+      }
+
+      .mandato-coletivo {
+        gap: 20px;
+      }
+
+
+}
