@@ -148,9 +148,10 @@
         opacity: 0;
     }
 
-    #intro h1 {
-        margin-left: 0;
-        margin-bottom: 80px;
+    .responsiveImg {
+        content: url(./fotosCandidatos2024/candidatosMobile.png);
+        max-width: 90vw;
+        margin-top: 70px;
     }
 
     .clique-aqui img {
@@ -177,6 +178,10 @@
     
       .video-thumbnail img {
         border-radius: 5px;
+      }
+
+      .QRCode {
+        gap: 20px;
       }
 
 }

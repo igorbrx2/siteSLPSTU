@@ -1,4 +1,19 @@
 console.log("Script carregado corretamente");
+
+// COPIAR PIX
+
+  document.getElementById('copyLink').addEventListener('click', function(event) {
+    event.preventDefault(); // Impede a navegação para "#" no link
+    
+    const textToCopy = '56.256.408/0001-83';
+    navigator.clipboard.writeText(textToCopy).then(function() {
+      console.log('Texto copiado com sucesso!');
+    }).catch(function(error) {
+      console.error('Erro ao copiar o texto: ', error);
+    });
+  });
+
+
 // VIDEOS
 document.addEventListener('DOMContentLoaded', function () {
     const API_KEY = 'AIzaSyCYvN7-x4gcl4Vf1UH72YcfYgMGAgSytto'; // Substitua com sua chave API
@@ -51,18 +66,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // conteúdo dinâmico dos candidatos
     const candidatos = {
     'sauloArcangeli': `
-    <p style="line-height: 1.2;">Professor da UEMA, doutor em Políticas Públicas e servidor do Ministério Público do Trabalho. É sindicalista de entidades de trabalhadores e trabalhadoras e atua como membro dos movimentos sociais no Conselho da Cidade de São Luís, que delibera sobre as diretrizes para a formulação e implementação da política de desenvolvimento urbano e rural da nossa cidade.<br>
+    <p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem;">Professor da UEMA, doutor em Políticas Públicas e servidor do Ministério Público do Trabalho. É sindicalista de entidades de trabalhadores e trabalhadoras e atua como membro dos movimentos sociais no Conselho da Cidade de São Luís, que delibera sobre as diretrizes para a formulação e implementação da política de desenvolvimento urbano e rural da nossa cidade.<br>
 <br>A candidatura de Saulo Arcangeli à prefeitura de São Luís, um ativista presente nas principais lutas que ocorreram em São Luís nos últimos anos, é a expressão, no campo eleitoral, das reivindicações dos trabalhadores e da juventude da cidade, de uma maioria, pobre e periférica, que é excluída de políticas públicas adequadas de transporte e mobilidade urbana, saúde, educação, abastecimento de água, iluminação pública, trabalho, e que sofre com uma agressiva poluição ambiental e com as várias formas de opressão às mulheres, negros e negras e aos LGBTQIAP+.<br>
     </p>`,
 
-    'jaciaraCastro': `<p style="line-height: 1.2;">
+    'jaciaraCastro': `<p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem;"">
     A candidata a vice-prefeita de São Luís é formada em Serviço Social pela Universidade Federal do Maranhão, empregada pública da Companhia de Saneamento Ambiental do Maranhão (CAEMA) e ativista do movimento de mulheres da cidade de São Luís.<br>
     
     <br>Atua, junto com os trabalhadores e trabalhadoras da companhia, pela restruturação e manutenção de uma CAEMA pública e estatal e, nestas eleições, será uma voz, juntamente com Saulo Arcangeli, pela permanência da companhia em São Luís. Jaciara tem uma voz firme no combate ao machismo e a violência contra as mulheres, atuando no Movimento Mulheres em Luta, MML.
 
 </p>`,
 
-'coletivoDasPretas': `<p style="line-height: 1.2;">
+'coletivoDasPretas': `<p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem;">
   Um coletivo que reúne três mulheres negras, professora Ester Durans, professora aposentada Marina Martins e Kimberlly Serejo, estudante de Serviço Social da Universidade Federal do Maranhão, que colocam seus nomes à disposição para disputar uma vaga na Câmara Municipal de São Luís, em busca de garantias de políticas públicas à população desassistida, em defesa da educação, da juventude e das trabalhadoras e trabalhadores da periferia de nossa cidade.<br>
 
 <br>O Coletivo das Pretas é uma candidatura coletiva classista, revolucionária e socialista, que defende um programa voltado para a classe trabalhadora, para a juventude  trabalhadora, preta e pobre, no combate às opressões machistas, racistas e LGBTfóbicas, na luta contra as desigualdades sociais e econômicas, e firmemente contra a violência às mulheres: encarceramento,  feminicídios e todas as mazelas cotidianas do capitalismo.<br> 
@@ -79,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <br>-	Respeito aos pisos salariais da Educação, da Saúde e da Segurança;<br>
 </p>`,
 
-'jayroMesquita': `<p style="line-height: 1.2;">
+'jayroMesquita': `<p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem;">
 Sou Jayro Mesquita, trabalhador portuário e engenheiro civil, tenho 51 anos e milito no PSTU, com ações principalmente - mas não só - na área dos portos.
 Candidato a vereador pela primeira vez, estarei focado na elaboração e votação de projetos que garantam pontos cruciais da minha luta e das pautas do PSTU, entre os quais:<br> 
 

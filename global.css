@@ -112,7 +112,7 @@ a {
 }
 
 .montserrat-font {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", 'verdana', sans-serif;
 }
 
 @font-face {
