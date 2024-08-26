@@ -160,4 +160,23 @@
         position: absolute;
       }
 
+      #video-thumbnails {
+        justify-content: start;
+        max-width: 90vw;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 10px 0;
+        gap: 10px;
+      }
+    
+      .video-thumbnail {
+        flex: 0 0 auto;
+        width: 120px;
+      }
+    
+      .video-thumbnail img {
+        border-radius: 5px;
+      }
+
 }

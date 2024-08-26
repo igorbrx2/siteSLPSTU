@@ -1,4 +1,51 @@
 console.log("Script carregado corretamente");
+// VIDEOS
+document.addEventListener('DOMContentLoaded', function () {
+    const API_KEY = 'AIzaSyCYvN7-x4gcl4Vf1UH72YcfYgMGAgSytto'; // Substitua com sua chave API
+    const CHANNEL_ID = 'UCGOV9SpaX3gSE4e6EZANX9g'; // Substitua com o ID do canal
+    const MAX_RESULTS = 5;
+    const mainVideoContainer = document.getElementById('main-video-container');
+    const videoThumbnailsContainer = document.getElementById('video-thumbnails');
+  
+    async function fetchLatestVideos() {
+      try {
+        const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=${MAX_RESULTS}`);
+        const data = await response.json();
+  
+        data.items.forEach((item, index) => {
+          const videoId = item.id.videoId;
+          const videoTitle = item.snippet.title;
+          const videoThumbnail = item.snippet.thumbnails.high.url;
+  
+          if (index === 0) {
+            // Embed the most recent video
+            mainVideoContainer.innerHTML = `
+              <div class="video-main">
+                <iframe width="70%" height="450px" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+              </div>
+            `;
+          } else {
+            // Display thumbnails for the rest of the videos
+            const videoElement = document.createElement('div');
+            videoElement.classList.add('video-thumbnail');
+            videoElement.innerHTML = `
+              <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
+                <img src="${videoThumbnail}" alt="${videoTitle}">
+                <p class="montserrat-font" style="font-weight: bold; text-align: start; line-height: 1.1;">${videoTitle}</p>
+              </a>
+            `;
+            videoThumbnailsContainer.appendChild(videoElement);
+          }
+        });
+      } catch (error) {
+        console.error('Erro ao buscar vídeos:', error);
+        mainVideoContainer.innerHTML = '<p>Não foi possível carregar o vídeo. Tente novamente mais tarde.</p>';
+      }
+    }
+  
+    fetchLatestVideos();
+  });  
+
 // MODAIS DE APRESENTAÇÃO
 
     // conteúdo dinâmico dos candidatos

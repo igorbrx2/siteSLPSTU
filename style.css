@@ -440,4 +440,54 @@ Version: 1.0
   #rodape span {
     color: white;
   }
+
+  /* VIDEOS */
+
+  #videos {
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #videos h2 {
+    font-size: 3.5rem;
+    color: var(--vermelho-fonte);
+    font-weight: 900;
+    max-width: 90vw;
+    text-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  
+  #main-video-container {
+    margin-bottom: 20px;
+  }
+  
+  #video-thumbnails {
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .video-thumbnail {
+    width: 200px;
+  }
+  
+  .video-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .video-thumbnail p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  
   
