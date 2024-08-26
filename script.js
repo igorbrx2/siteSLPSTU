@@ -153,7 +153,8 @@ const date = new Date();
 
 // Definindo os compromissos diretamente no código
 const compromissos = {
-	"2024-08-10": ["Inauguração da sede do PSTU (Rua Santo Antônio, 697, Cidade Alta. Em Frente a Igreja do Galo)  - 10:00"],
+    "2024-08-26": ["Participação no dia de Lutas dos bancários - 9h", "Entrevista Jornal da Mira - 12h", "Gravação de programas para as redes sociais - 16h"],
+	"2024-08-27": ["Panfletagem na Deodoro/Canto da Viração - 8h", "Entrevista no programa Conexão Nós, na Rádio FM Esperança - 13h", "Roda de conversa com moradores da Fé em Deus - 19h"],
     // Adicione mais compromissos conforme necessário
 };
 
