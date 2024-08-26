@@ -134,21 +134,6 @@ Candidato a vereador pela primeira vez, estarei focado na elaboração e votaç�
           });
         });
 
-// QUEM ASSINOU OCULTAR EXIBIR
-
-document.addEventListener('DOMContentLoaded', function () {
-    const subscriberList = document.getElementById('subscriber-container');
-    const btnQuemAssinou = document.querySelector('.btn-quemassinou');
-
-    btnQuemAssinou.addEventListener('click', function () {
-        if (subscriberList.style.display === 'none') {
-            subscriberList.style.display = 'flex';
-        } else {
-            subscriberList.style.display = 'none';
-        }
-    });
-});
-
 const date = new Date();
 
 // Definindo os compromissos diretamente no código
