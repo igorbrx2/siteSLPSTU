@@ -1,17 +1,26 @@
 console.log("Script carregado corretamente");
 
 // COPIAR PIX
-
-  document.getElementById('copyLink').addEventListener('click', function(event) {
-    event.preventDefault(); // Impede a navegação para "#" no link
-    
-    const textToCopy = '56.256.408/0001-83';
-    navigator.clipboard.writeText(textToCopy).then(function() {
+document.getElementById('copyLink').addEventListener('click', function(event) {
+  event.preventDefault(); 
+  
+  const textToCopy = '56.256.408/0001-83';
+  navigator.clipboard.writeText(textToCopy).then(function() {
       console.log('Texto copiado com sucesso!');
-    }).catch(function(error) {
+
+      document.getElementById('successMessage').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+  }).catch(function(error) {
       console.error('Erro ao copiar o texto: ', error);
-    });
   });
+});
+
+document.addEventListener('click', function(event) {
+  if (event.target.id !== 'copyLink' && event.target.id !== 'successMessage') {
+      document.getElementById('successMessage').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+  }
+});
 
 
 // VIDEOS

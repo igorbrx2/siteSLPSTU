@@ -1,4 +1,3 @@
-
 /* HEADER */
 
 #cabecalho {
@@ -25,7 +24,7 @@
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 0.9rem;
   transition: ease-in-out 0.3s;
 }
 
@@ -201,7 +200,6 @@
   background: url(./fotosCandidatos2024/vermelhoBG.png);
   background-size: cover;
   width: 100%;
-
 }
 
 #faca-parte {
@@ -211,7 +209,6 @@
   align-items: center;
   margin: 0 auto;
   padding: 50px 0;
-
 }
 
 .clique-aqui img {
@@ -306,7 +303,7 @@
   gap: 20px;
   justify-content: center;
   align-items: start;
-margin: 50px auto;
+  margin: 50px auto;
 }
 
 .eventos {
@@ -340,19 +337,20 @@ margin: 50px auto;
   color: rgb(0, 0, 0);
 }
 
-.weekdays, .days {
+.weekdays,
+.days {
   display: flex;
   flex-wrap: wrap;
 }
 
-.weekdays div, .days div {
+.weekdays div,
+.days div {
   width: calc(100% / 7);
   text-align: center;
   padding: 10px;
 }
 
 .date p {
-
   font-weight: bold;
 }
 
@@ -402,9 +400,9 @@ margin: 50px auto;
 
 .events div {
   display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   padding: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #ddd;
@@ -450,7 +448,7 @@ text-align: center;
 
 #video-thumbnails {
   display: flex;
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
   gap: 15px;
   justify-content: center;
 }
@@ -518,9 +516,30 @@ text-align: center;
 .QRCode .QR {
   width: 130px;
   border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.32);
 }
 
 .QRCode .copiar {
   width: 250px;
 }
 
+#successMessage {
+  font-size: 1.2rem;
+  border-radius: 15px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0 auto;
+  max-width: 90vw;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}

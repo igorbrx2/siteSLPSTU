@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./responsivo.css" />
   <link rel="stylesheet" href="./global.css" />
 
+  <link rel="icon" href="./fotosCandidatos2024/Logo PSTU/logo-pstu.png" type="image/x-icon">
+
   <!-- montserrat font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +58,7 @@
     </div>
     <div class="QRCode">
       <a href="#" id="copyLink"><img class="copiar" src="./fotosCandidatos2024/btnCopiar.png" alt=""></a>
-    <img class="QR" src="./fotosCandidatos2024/qrCodeContribuicao.png" alt="">
+      <img class="QR" src="./fotosCandidatos2024/qrCodeContribuicao.png" alt="">
     </div>
   </section>
 
@@ -85,7 +87,7 @@
         </a>
       </li>
 
-      <li class="card-candidato" data-candidato="coletivoDasPretas"> 
+      <li class="card-candidato" data-candidato="coletivoDasPretas">
         <a href="./">
           <img src="./fotosCandidatos2024/coletivoPretas.png" alt="">
           <span class="montserrat-font"><strong>Coletivo<br>das Pretas</strong></span></span>
@@ -127,19 +129,16 @@
   </div>
 
   <!-- VIDEOS -->
-<!-- VIDEOS -->
-<section id="videos">
-  <h2 class="montserrat-font">VÍDEOS</h2>
-  <div id="main-video-container" class="container-1200">
-    <!-- O vídeo principal será carregado aqui dinamicamente -->
-  </div>
-  <div id="video-thumbnails" class="container-1200">
-    <!-- Miniaturas dos outros vídeos serão carregadas aqui -->
-  </div>
-</section>
-<!-- FIM DOS VIDEOS -->
+  <section id="videos">
+    <h2 class="montserrat-font">VÍDEOS</h2>
+    <div id="main-video-container" class="container-1200">
+    </div>
+    <div id="video-thumbnails" class="container-1200">
+    </div>
+  </section>
+  <!-- FIM DOS VIDEOS -->
 
-<!-- FIM DOS VIDEOS -->
+  <!-- FIM DOS VIDEOS -->
 
   <!-- AGENDA -->
 
@@ -147,43 +146,43 @@
 
     <h1 class="montserrat-font agendaH1" id="agenda">AGENDA</h1>
 
-  <div class="container">
-    <div class="calendar">
-      <div class="eventos"><span class="montserrat-font">EVENTOS</span></div>
+    <div class="container">
+      <div class="calendar">
+        <div class="eventos"><span class="montserrat-font">EVENTOS</span></div>
         <div class="month">
-            <i class="prev">❮</i>
-            <div class="date">
-                <h1></h1>
-                <p class="montserrat-font"></p>
-            </div>
-            <i class="next">❯</i>
+          <i class="prev">❮</i>
+          <div class="date">
+            <h1></h1>
+            <p class="montserrat-font"></p>
+          </div>
+          <i class="next">❯</i>
         </div>
         <div class="weekdays">
-            <div>Dom</div>
-            <div>Seg</div>
-            <div>Ter</div>
-            <div>Qua</div>
-            <div>Qui</div>
-            <div>Sex</div>
-            <div>Sáb</div>
+          <div>Dom</div>
+          <div>Seg</div>
+          <div>Ter</div>
+          <div>Qua</div>
+          <div>Qui</div>
+          <div>Sex</div>
+          <div>Sáb</div>
         </div>
         <div class="days"></div>
-    </div>
-    <div class="agenda">
-      <div class="prox-eventos"><span class="montserrat-font">PRÓXIMOS EVENTOS</span></div>
+      </div>
+      <div class="agenda">
+        <div class="prox-eventos"><span class="montserrat-font">PRÓXIMOS EVENTOS</span></div>
         <div class="events"></div>
+      </div>
     </div>
-</div>
 
-</section>
+  </section>
 
-<!-- FOOTER -->
+  <!-- FOOTER -->
 
-<footer id="rodape">
-  <span>Desenvolvido pela Poti Comunicação.</span>
-</footer>
+  <footer id="rodape">
+    <span>Desenvolvido pela Poti Comunicação.</span>
+  </footer>
 
-<section class="modalNando-container" id="modal" style="position: fixed;
+  <section class="modalNando-container" id="modal" style="position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -193,7 +192,7 @@
   z-index: 999;
   justify-content: center;
   align-items: center;">
-  <div class="modalNando" style="background: white;
+    <div class="modalNando" style="background: white;
   text-align: start;
   height: 70vh;
   width: 800px;
@@ -205,7 +204,7 @@
   align-items: center;
   box-shadow: 10px 10px 22px -3px rgba(0,0,0,0.4);
   position: relative;">
-    <button data-modal="fechar" class="botaoFechar" id="fecharModal" style="background: var(--vermelho-fonte);
+      <button data-modal="fechar" class="botaoFechar" id="fecharModal" style="background: var(--vermelho-fonte);
   color: white;
   font-weight: bold;
   border-style: none;
@@ -215,11 +214,18 @@
   border-radius: 10px;
   top: 10px;
   right: 10px;">fechar</button>
-    <div id="modalConteudo">
-      
+      <div id="modalConteudo">
+      </div>
     </div>
+  </section>
+
+  <!-- Modal para a mensagem de sucesso -->
+  <div id="successMessage" class="montserrat-font">
+    Código copiado com sucesso! Pague o PIX no aplicativo do seu banco.
   </div>
-</section>
+
+  <!-- Overlay para cobrir o fundo -->
+  <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
 
   <script src="./script.js"></script>
 </body>
