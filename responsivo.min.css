@@ -1,0 +1,185 @@
+@media (max-width: 390px) {
+
+  .titulo-intro h1 {
+      font-size: 4.5rem;
+  }
+
+  .titulo-intro h2 {
+      font-size: 3.5rem;
+      margin-top: -15px;
+  }
+
+  #intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 93vh;
+      background: url(./fotosCandidatos2024/BG.png) center 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  #intro h1 {
+      font-size: 2rem;
+      margin-left: 0;
+      margin-top: 2em;
+    }
+  
+    .zap {
+      height: 10vh;
+    }
+
+  #corpo-manifesto h1 {
+      margin-top: -50px;
+      font-size: 4rem;
+  }
+
+  #pre-candidaturas h3 {
+      font-size: 3.5rem;
+  }
+
+  .card-candidato img {
+      width: 350px;
+  }
+
+  .clique-aqui img {
+      display: none;
+  }
+
+  .vamos-trilhar h2 {
+      font-size: 2rem;
+    }
+
+    .vamos-trilhar{
+      margin-left: 0px;
+    }
+
+  .btnCartilha {
+      margin-right: 80px;
+  }
+
+
+
+}
+
+@media (max-width: 575px) {
+
+  #intro button {
+      max-width: 90vw;
+      padding: 5px 15px;
+  } 
+  .titulo-intro h1 {
+      font-size: 5rem;
+  }
+
+  .titulo-intro h2 {
+      font-size: 4rem;
+      margin-top: -20px;
+  }
+
+  #corpo-manifesto h1 {
+      margin-top: -50px;
+      font-size: 5rem;
+  }
+
+  #corpo-manifesto h2 {
+      font-size: 1.6rem;
+  }
+
+  #pre-candidaturas h2 {
+      font-size: 4.5rem;
+      max-width: 90vw;
+  }
+
+  .clique-aqui button {
+      max-width: 90vw;
+  }
+
+  .vamos-trilhar {
+      margin-left: 0;
+  }
+
+  .vamos-trilhar h2 {
+      max-width: 90vw;
+  }
+
+  .btnCartilha {
+      margin-left: 80px;
+  }
+
+  #intro h1 {
+      font-size: 2rem;
+      margin-left: 0;
+    }
+
+    .clique-aqui img {
+      display: none;
+    }
+    
+
+}
+
+@media (max-width: 770px) {
+
+  .mobile-menu {
+      display: block;
+  }
+
+  #nav-list {
+      position: absolute;
+      top: 2vh;
+      right: 0;
+      width: 50vw;
+      height: 100vh;
+      background: var(--vermelho-bg);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      transform: translateX(100%);
+      transition: transform .4s ease-in;
+  }
+
+  #nav-list li {
+      margin-left: 0;
+      opacity: 0;
+  }
+
+  .responsiveImg {
+      content: url(./fotosCandidatos2024/candidatosMobile.png);
+      max-width: 90vw;
+      margin-top: 55px;
+  }
+
+  .clique-aqui img {
+      width: 200px;
+      top: -110px;
+      left: -200px;
+      position: absolute;
+    }
+
+    #video-thumbnails {
+      justify-content: start;
+      max-width: 90vw;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 10px 0;
+      gap: 10px;
+    }
+  
+    .video-thumbnail {
+      flex: 0 0 auto;
+      width: 120px;
+    }
+  
+    .video-thumbnail img {
+      border-radius: 5px;
+    }
+
+    .QRCode {
+      gap: 20px;
+    }
+
+}
