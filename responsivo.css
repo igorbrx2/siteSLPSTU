@@ -151,7 +151,7 @@
     .responsiveImg {
         content: url(./fotosCandidatos2024/candidatosMobile.png);
         max-width: 90vw;
-        margin-top: 70px;
+        margin-top: 55px;
     }
 
     .clique-aqui img {
