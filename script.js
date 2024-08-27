@@ -149,6 +149,7 @@ const date = new Date();
 const compromissos = {
     "2024-08-26": ["Participação no dia de Lutas dos bancários - 9h", "Entrevista Jornal da Mira - 12h", "Gravação de programas para as redes sociais - 16h"],
 	"2024-08-27": ["Panfletagem na Deodoro/Canto da Viração - 8h", "Entrevista no programa Conexão Nós, na Rádio FM Esperança - 13h", "Roda de conversa com moradores da Fé em Deus - 19h"],
+  "2024-08-28": ["Gravação de programa para as redes sociais - 8h", "Reunião com o Sindicato dos Urbanitários sobre saneamento em São Luís - 14h30", "Reunião da Coordenação da campanha - 19h"],
     // Adicione mais compromissos conforme necessário
 };
 
